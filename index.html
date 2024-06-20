@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brython Example</title>
+    <!-- Include Brython scripts -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.9.12/brython.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.9.12/brython_stdlib.min.js"></script>
+</head>
+<body onload="brython()">
+    <script type="text/python">
+        # Your Python code goes here
+        from browser import document, html
+
+        # Example Python code to display "Hello, World!" in the browser
+        def main():
+            message = "Hello, World!"
+            document <= html.H1(message)
+
+        # Run the main function
+        main()
+    </script>
+</body>
+</html>
